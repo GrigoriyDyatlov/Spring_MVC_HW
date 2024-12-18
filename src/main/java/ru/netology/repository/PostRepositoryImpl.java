@@ -4,6 +4,7 @@ import org.springframework.stereotype.Repository;
 import ru.netology.exception.NotFoundException;
 import ru.netology.model.Post;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
@@ -16,7 +17,12 @@ public class PostRepositoryImpl implements PostRepository {
 
     @Override
     public List<Post> all() {
-        return posts.values().stream().toList();
+        return  List.of(
+                new Post(1, "sadasd")
+                ,new Post(2, "asdgdffff")
+                , new Post(3, "asdgdsnfgdfg")
+        );
+        //return posts.values().stream().toList();
     }
 
     @Override
