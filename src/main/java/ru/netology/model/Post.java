@@ -30,9 +30,10 @@ public class Post {
         this.content = content;
     }
 
-    public boolean isRemoved (){
+    public boolean isRemoved() {
         return removed;
     }
+
     public void remove() {
         removed = true;
     }

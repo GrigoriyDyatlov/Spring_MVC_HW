@@ -26,7 +26,7 @@ public class PostRepositoryImpl implements PostRepository {
 
     @Override
     public Optional<Post> getById(long id) {
-        if (posts.get(id) != null && posts.get(id).isRemoved()){
+        if (posts.get(id) != null && posts.get(id).isRemoved()) {
             return Optional.ofNullable(posts.get(id));
         } else return null;
     }
